@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre perfumes de diseñador, nicho y árabes en need.fragrances.">
+  <meta name="theme-color" content="#f7f4ee">
+  <title>need.fragrances | Perfumería selecta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FRAGANCIAS SELECCIONADAS · PEDIDOS DIRECTOS POR WHATSAPP</div>
+
+  <header class="header">
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">need<span>.</span>fragrances</a>
+      <div class="nav-links">
+        <a href="#coleccion">Colección</a>
+        <a href="#experiencia">Nuestra esencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <button class="bag-button" id="open-bag" type="button" aria-label="Abrir bolsa">
+        <span class="bag-label">Mi bolsa</span><span class="bag-icon">＋</span><b id="bag-count">0</b>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> EL ARTE DE DEJAR HUELLA</p>
+        <h1>Una esencia.<br><em>Tu identidad.</em></h1>
+        <p class="hero-description">Descubre fragancias que hablan por ti. Una selección especial de aromas diseñados para acompañar cada momento.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#coleccion">Explorar colección <span>↗</span></a>
+          <a class="text-link" href="#experiencia">Conoce nuestra esencia</a>
+        </div>
+        <div class="hero-foot"><span>01 / FRAGANCIAS CON PERSONALIDAD</span><span>CHILE · 2026</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="althair-hero.jpg" alt="Perfume Althaïr de Parfums de Marly">
+        <div class="hero-image-caption"><span>FRAGANCIA DESTACADA</span><strong>Althaïr Eau de Parfum</strong><small>Parfums de Marly · 125 ml</small></div>
+        <div class="hero-number">N° 01</div>
+      </div>
+    </section>
+
+    <section class="promise wrap" aria-label="Beneficios">
+      <div><span class="promise-number">01</span><p>Selección<br><strong>especial</strong></p></div>
+      <div><span class="promise-number">02</span><p>Atención<br><strong>personalizada</strong></p></div>
+      <div><span class="promise-number">03</span><p>Pedidos por<br><strong>WhatsApp</strong></p></div>
+    </section>
+
+    <section class="collection section" id="coleccion">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DESCUBRE TU PRÓXIMA ESENCIA</p>
+            <h2>La colección<span>.</span></h2>
+            <p class="section-intro">Encuentra ese aroma que se convierte en parte de ti.</p>
+          </div>
+          <div class="catalog-tools">
+            <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Buscar una fragancia..." autocomplete="off"></label>
+            <label class="filter-label"><span class="sr">Filtrar por familia</span>
+              <select id="family-filter">
+                <option value="">Todas las familias</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="catalog-meta"><span id="result-count">15 FRAGANCIAS</span><span>SELECCIÓN NEED.FRAGRANCES</span></div>
+        <div id="product-grid" class="product-grid"></div>
+        <p id="no-results" class="no-results" hidden>No encontramos resultados. Prueba con otra búsqueda.</p>
+      </div>
+    </section>
+
+    <section class="feature" id="experiencia">
+      <div class="feature-image"><img src="althair.jpg" alt="Frasco de Althaïr"></div>
+      <div class="feature-copy">
+        <p class="eyebrow">EL PERFUME DESTACADO</p>
+        <h2>El lujo está<br>en los <em>detalles.</em></h2>
+        <p>Althaïr combina la calidez de la vainilla Bourbon con especias luminosas y acordes amaderados. Una fragancia envolvente, elegante y con carácter.</p>
+        <div class="notes-tags"><span>VAINILLA</span><span>CANELA</span><span>ÁMBAR</span></div>
+        <a href="#coleccion" class="text-link dark-link">Encuentra tu fragancia <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="wrap closing-inner">
+        <p class="eyebrow">EL AROMA QUE TE REPRESENTA</p>
+        <h2>No sigas tendencias.<br><em>Deja tu propia huella.</em></h2>
+        <a class="button button-dark" href="#coleccion">Ver todos los perfumes <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="wrap footer-main">
+      <div><a class="logo footer-logo" href="#inicio">need<span>.</span>fragrances</a><p>Fragancias para quienes hacen de cada detalle algo inolvidable.</p></div>
+      <div class="footer-contact"><span>¿BUSCAS TU PRÓXIMA FRAGANCIA?</span><a href="https://wa.me/56930241024" target="_blank" rel="noopener">Hablemos por WhatsApp ↗</a><small>+56 9 3024 1024</small></div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2026 NEED.FRAGRANCES</span><span>HECHO PARA DEJAR HUELLA.</span></div>
+  </footer>
+
+  <div id="drawer-scrim" class="scrim"></div>
+  <aside id="bag-drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Tu bolsa" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Mi bolsa<span>.</span></h2></div><button id="close-bag" class="close" type="button" aria-label="Cerrar bolsa">×</button></div>
+    <div class="drawer-body">
+      <div id="bag-empty" class="bag-empty"><span>✳</span><strong>Tu bolsa está vacía</strong><p>Descubre la colección y agrega tus fragancias favoritas.</p><a href="#coleccion" id="empty-explore" class="text-link dark-link">Explorar colección ↗</a></div>
+      <ul id="bag-list" class="bag-list"></ul>
+    </div>
+    <div class="drawer-foot"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0</strong></div><p class="checkout-note">El pedido se coordina directamente por WhatsApp.</p><a id="checkout" class="button button-dark full" href="#coleccion">Continuar por WhatsApp ↗</a><button id="continue-shopping" class="continue-button" type="button">Seguir explorando</button></div>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
